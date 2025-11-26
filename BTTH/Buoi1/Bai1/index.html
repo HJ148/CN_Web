@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        a button {
+            padding: 15px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background: #007bff;
+            color: white;
+        }
+
+        a button:hover {
+            background: #0056b3;
+        }
+
+        .admin-btn {
+            background: #28a745;
+        }
+
+        .admin-btn:hover {
+            background: #1d7a33;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Chọn giao diện xem danh sách hoa</h2>
+
+    <div class="btn-container">
+        <a href="user.php">
+            <button>Người dùng khách</button>
+        </a>
+
+        <a href="admin.php">
+            <button class="admin-btn">Người dùng quản trị</button>
+        </a>
+    </div>
+
+</body>
+</html>
